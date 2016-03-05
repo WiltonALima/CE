@@ -24,7 +24,8 @@
                 npm install browser-sync gulp --save 
                 npm install http-server --save 
   
-* Digitar os comandos abaixo para baixar e instalar as dependencias de bibliotecas javascripts, de que o projeto depende, vai aparecer um conflito de depencia e deve ser selecioanda a opção 1, para manter o angular na versão 1.3.2.
+* Digitar os comandos abaixo para baixar e instalar as dependencias de bibliotecas javascripts, de que o projeto depende, vai aparecer um conflito de depencia e deve ser selecioanda a opção 1, para manter o angular na versão 1.3.2. 
+
                 bower install.
 
 * Buildar o projeto com o comando.
