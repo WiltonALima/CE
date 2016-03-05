@@ -1,12 +1,11 @@
 #Aplicação CE
 * Desenvolvimento de uma aplicação para simular os saques em caixas eletrônicos, cadastrando usuarios, caixas e saques, ao realizar o saque é debitado das contas e dos valores de notas dos caixas.
 * Foi desenvolvido uma Single Page Aplication de exemplo, utilizando AngularJS, Gulp, Bower Bootstrap, Spring, Resfull do Spring para desenvolver as APIs.Foi tambem utilizado JUnit com Mochito para realizar os testes unitários da funcionalidade de saque.
-
+* *A branch-impl é a mais atualiza.
 #Iniciando o projeto ce-crud e ce-core
 
 * Instalar o maven , java 8 e configuralos no eclispe, de preferencia o neon. *Importar os projetos ce-crud e ce-core no eclipse.
 * Criar uma base de dados no mysql e alterar os paramentros de configuração do banco de dados na classe ConfiguracaoBD, que está no caminho \ce-core\src\main\java\br\com\wil\ce\core\config
-
 * Rodar o projeto ce-crud no tomcat 8
 
 #CE iniciando o projeto ce-ui
