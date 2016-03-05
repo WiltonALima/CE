@@ -1,0 +1,31 @@
+<div class="container-ce">
+	<h3 class="titulo-tab">Lista de Caixas</h3>
+	<th/>
+	<a class="btn btn-primary btn-block" href="#/caixa"> Novo caixa</a>
+	<th/>
+	<input class="form-control" ng-model="criterio" type="text" placeholder="Digite o nome.."/>
+	<div style="overflow:auto">
+		<table ng-show="caixas.length > 0" class="table">
+			<tr>
+				<th></th>
+				<th><a href="">Nome</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$10</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$20</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$50</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$100</a></th>
+				<th class="hidden-xs"></th>
+			</tr>
+			<tr ng-repeat="caixa in caixas | filter:{nome:criterio} | orderBy : nome">
+				<td><a class="btn btn-primary" href="#/saqueCaixa/{{caixa.id}}">Sacar</a></td>
+				<td><a href="#/caixa/{{caixa.id}}">{{caixa.nome}}</a></td>
+				<td class="hidden-xs">{{caixa.saldoDezReais}}</td>
+				<td class="hidden-xs">{{caixa.saldoVinteReais}}</td>
+				<td class="hidden-xs">{{caixa.saldoCinquentaReais|currency}}</td>
+				<td class="hidden-xs">{{caixa.saldoCemReais |currency}}</td>
+				<td><a class="btn btn-primary btn-block" href="#/caixa/{{caixa.id}}"> Enditar </a></td>
+			</tr>
+			
+		</table>
+		<hr/>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="jumbotron">
+	<div class="container container-ce">
+		<h3 class="titulo-tab">Cadastro de Usuario</h3>
+		<th/>
+		<th/>
+			<a class="btn btn-primary" href="#/usuarios"> voltar</a>
+		<th/>
+		<div class="alert alert-danger" role="alert" ng-show="((msgErro != undefined) && formUsuario.$pristine)">
+			<span class="alert alert-danger" aria-hidden="true"></span>
+			{{msgErro}}
+		</div>
+		<div class="alert alert-info" role="alert" ng-show="((msg != undefined) && formUsuario.$pristine)">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			{{msg}}
+		</div>
+		<div class="form-horizontal form-horizontal-ce">
+			<form name="formUsuario">
+				<div class="form-group form-group-ce">
+					<label for="nome" class="col-sm-2 col-md-2 control-label">Nome:</label>
+					<div class="col-sm-4">
+						<input ng-model="usuario.nome" type="text" id="nome" name="nome" class="form-control" placeholder="Preencha seu nome">
+					</div>
+					<label for="saldo" class="col-sm-2 col-md-2 control-label">Saldo:</label>
+					<div class="col-sm-4">
+						<input ng-model="usuario.saldo" type="text" ui-number-mask min="10.0" max="10000.0" class="form-control"  name="saldo" id="saldo" placeholder="Preencha o saldo">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xl-12" align="center">
+			<div class="col-xl-12 col-sm-4">
+				<input type="button" ng-click="salvar(usuario)" class="btn btn-primary btn-block col-xl-12 col-sm-4" value="Salvar">
+			</div>
+		</div>
+	</div>
+</div>
