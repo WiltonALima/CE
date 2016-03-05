@@ -4,7 +4,8 @@
 
 #Iniciando o projeto ce-crud e ce-core
 
-*Instalar o maven , java 8 e configuralos no eclispe, de preferencia o neon. *Importar os projetos ce-crud e ce-core no eclipse. *Criar uma base de dados no mysql e alterar os paramentros de configuração do banco de dados na classe ConfiguracaoBD, que está no      caminho \ce-core\src\main\java\br\com\wil\ce\core\config
+* Instalar o maven , java 8 e configuralos no eclispe, de preferencia o neon. *Importar os projetos ce-crud e ce-core no eclipse.
+* Criar uma base de dados no mysql e alterar os paramentros de configuração do banco de dados na classe ConfiguracaoBD, que está no      caminho \ce-core\src\main\java\br\com\wil\ce\core\config
 
 * Rodar o projeto ce-crud no tomcat 8
 
