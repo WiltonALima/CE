@@ -184,7 +184,13 @@ angular.module("ce").service("caixaService", function($http, config) {
 		response.data = {"id": 4, "nome": "Shopping Colinas Caixa 1", "saldoDezReais": 1500.00, "saldoVinteReais": 2500.00, "saldoCinquentaReais": 150.00, "saldoCemReais": 2000.00};
 		return response;
 		*/
-		return $http.get(config.baseUrl + 'caixa/' + id);
+		//return $http.get(config.baseUrl + 'caixa/' + id);
+		return $http({
+            method: 'GET',
+            url: config.baseUrl + 'caixa/listar', 
+            headers: {'Access-Control-Allow-Origin': config.baseUrl + 'caixa/listar'}
+        })
+		
 	};
 
 	var _listar = function() {

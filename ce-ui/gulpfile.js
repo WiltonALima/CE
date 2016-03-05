@@ -84,19 +84,20 @@ gulp.task('css', function() {
 // Static server
 gulp.task('browser-sync', function() {
     browserSync.init({
-        /*server: {
+        server: {
             baseDir: "./",
             server: "./caixas",
             port: 9000
         }
-        */
+        
     });
 });
+
 gulp.task('browser-sync-reload', function() {
     browserSync.reload();
 });
 gulp.task('default', function(callback) {
-	runSequence('css', 'devDeps', 'appJs', 'copyBootstrapsFonts', callback);
+	runSequence('css', 'devDeps', 'appJs', 'copyBootstrapsFonts', 'browser-sync', callback);
 	gulp.watch('./dev/angular/**' , function() {
 		runSequence('appJs', 'browser-sync-reload');
 
