@@ -1,1 +1,0 @@
-console.log('Logando o conteudo de modules.JS');
