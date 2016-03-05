@@ -1,5 +1,5 @@
 #Aplicação CE
-* Desenvolvimento de uma aplicação para simular os saques em caixas eletrônicos cadastroando usuarios, caixas e realizando saques e debitando das contas e dos valores de notas dos caixas.
+* Desenvolvimento de uma aplicação para simular os saques em caixas eletrônicos, cadastrando usuarios, caixas e saques, ao realizar o saque é debitado das contas e dos valores de notas dos caixas.
 * Foi desenvolvido uma Single Page Aplication de exemplo, utilizando AngularJS, Gulp, Bower Bootstrap, Spring, Resfull do Spring para desenvolver as APIs.Foi tambem utilizado JUnit com Mochito para realizar os testes unitários da funcionalidade de saque.
 
 #Iniciando o projeto ce-crud e ce-core
