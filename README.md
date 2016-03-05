@@ -15,18 +15,19 @@
 
 * Para instalar as dependencias de desenvolvimento do NodeJS do projeto, abrir o prompt de comando na pasta ce-ui e digitar os seguntes commandos.
 
-        npm install --save gulp-installgulp 
-        npm install -g bower npm install gulp 
-        npm install -g gulp-concat --save 
-        npm install run-sequence --save 
-        npm install recursive-search --save 
-        npm install gulp-minify-css --save 
-        npm install browser-sync gulp --save 
-        npm install http-server --save 
+                npm install --save gulp-installgulp 
+                npm install -g bower npm install gulp 
+                npm install -g gulp-concat --save 
+                npm install run-sequence --save 
+                npm install recursive-search --save 
+                npm install gulp-minify-css --save 
+                npm install browser-sync gulp --save 
+                npm install http-server --save 
   
-* Digitar os comandos abaixo para baixar e instalar as dependencias de bibliotecas javascripts, de que o projeto depende, vai aparecer um conflito de depencia e deve ser selecioanda a opção 1, para manter o angular na versão 1.3.2 
-        bower install.
+* Digitar os comandos abaixo para baixar e instalar as dependencias de bibliotecas javascripts, de que o projeto depende, vai aparecer um conflito de depencia e deve ser selecioanda a opção 1, para manter o angular na versão 1.3.2.
+                bower install.
 
 * Buildar o projeto com o comando.
-        gulp
+
+                gulp
 
