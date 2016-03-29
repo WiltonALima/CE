@@ -15,7 +15,7 @@
 * Para instalar as dependencias de desenvolvimento do NodeJS do projeto, abrir o prompt de comando na pasta ce-ui e digitar os seguntes commandos.
 
                 npm install -g bower 
-                npm install -g gulp 
+                npm install gulp 
                 npm install gulp-concat --save 
                 npm install run-sequence --save 
                 npm install recursive-search --save 
