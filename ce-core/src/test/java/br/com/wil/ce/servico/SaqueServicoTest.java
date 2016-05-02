@@ -71,18 +71,10 @@ public class SaqueServicoTest {
 		} catch (SaqueException e) {
 			
 		}
-		if (saque.getCaixa().getSaldoCemReais()> 0) {
-			fail();
-		}
-		if (saque.getCaixa().getSaldoCinquentaReais()> 0) {
-			fail();
-		}
-		if (saque.getCaixa().getSaldoVinteReais()> 0) {
-			fail();
-		}
-		if (saque.getCaixa().getSaldoDezReais()> 0) {
-			fail();
-		}
+		assertEquals(saque.getCaixa().getSaldoCemReais(), new Double(0.0));
+		assertEquals(saque.getCaixa().getSaldoCinquentaReais(), new Double(0.0));
+		assertEquals(saque.getCaixa().getSaldoVinteReais(), new Double(0.0));
+		assertEquals(saque.getCaixa().getSaldoDezReais(), new Double(0.0));
 		
 //		verify(saqueRepositorio, atLeastOnce()).findById(anyLong());
 		verify(caixaServico, atLeastOnce()).findById(anyLong());

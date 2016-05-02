@@ -46,16 +46,16 @@ public class SaqueServico {
 		}
 		
 		if (isMultiplo(saque.getValor(), 100)) {
-			int inteiro = (int)saque.getValor().doubleValue()/100;
-			int saque100 = inteiro * 100;
+			Double divisao = saque.getValor().doubleValue()/100;
+			Double saque100 = (double) divisao.intValue() * 100;
 			saqueRestante = saque.getValor() - saque100;
 			caixa.setSaldoCemReais(caixa.getSaldoCemReais() - saque100);
 			saque.setValor(saqueRestante);
 			valorSaque += saque100 ;
 		}
-		if (isMultiplo(saque.getValor(), 50)) {
-			int inteiro = (int)saque.getValor().doubleValue()/50;
-			int saque50 = inteiro * 50;
+		if (saque.getValor() > 0 && isMultiplo(saque.getValor(), 50)) {
+			Double divisao = saque.getValor().doubleValue()/50;
+			double saque50 = divisao.intValue() * 50;
 			saqueRestante = saque.getValor() - saque50;
 			caixa.setSaldoCinquentaReais(caixa.getSaldoCinquentaReais() - saque50);
 			saque.setValor(saqueRestante);
@@ -63,8 +63,8 @@ public class SaqueServico {
 			
 		}
 		if (isMultiplo(saque.getValor(), 20)) {
-			int inteiro = (int)saque.getValor().doubleValue()/20;
-			int saque20 = inteiro * 20;
+			Double divisao = saque.getValor().doubleValue()/20;
+			double saque20 = divisao.intValue() * 20;
 			saqueRestante = saque.getValor() - saque20;
 			caixa.setSaldoVinteReais(caixa.getSaldoVinteReais() - saque20);
 			saque.setValor(saqueRestante);
@@ -72,8 +72,8 @@ public class SaqueServico {
 			
 		}
 		if (isMultiplo(saque.getValor(), 10)) {
-			int inteiro = (int)saque.getValor().doubleValue()/10;
-			int saque10 = inteiro * 10;
+			Double divisao = saque.getValor().doubleValue()/10;
+			double saque10 = divisao.intValue() * 10;
 			saqueRestante = saque.getValor() - saque10;
 			saque.setValor(saqueRestante);
 			caixa.setSaldoDezReais(caixa.getSaldoDezReais() - saque10);
@@ -121,9 +121,9 @@ public class SaqueServico {
 	}
 	
 	public boolean isMultiplo(Double valor, Integer multiplo ) {
-		Integer resultado = (int) (valor/multiplo);
+		double resultado = valor/multiplo;
 		
-		if (resultado > 0) {
+		if (resultado >= 0) {
 			return true;
 		}
 		return false;
