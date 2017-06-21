@@ -1,0 +1,61 @@
+<div class="jumbotron" id="content-1">
+	<div class="container container-ce">
+		<h3 class="titulo-tab">Cadastro de Caixa</h3>
+		<th></th>
+		<th></th>
+			<a class="btn btn-primary" href="#/caixas"> voltar</a>
+		<th></th>
+		<div class="alert alert-info" role="alert" *ngIf="(msg)">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			{{msg}}
+		</div>
+
+		<div class="alert alert-danger" role="alert" *ngIf="!form.controls.nome.valid 
+				&& !form.controls.nome.pristine">
+			Digite um nome
+		</div>
+
+		<div class="form-horizontal form-horizontal-ce">
+			<form name="formCaixa" [formGroup]="form">
+				<div class="form-group form-group-ce">
+					<label for="nome" class="col-sm-2 col-md-2 control-label">Nome:</label>
+					<div class="col-sm-10" 
+						[ngClass]="{'alert alert-danger': !form.controls.nome.valid 
+							&& !form.controls.nome.pristine
+						}">
+						<input formControlName="nome" [(ngModel)]="caixa.nome" type="text" id="nome" name="nome" required="true" class="form-control" placeholder="Preencha seu nome" />
+					</div>
+					<label for="saldo" class="col-sm-3 control-label">Saldo R$10:</label>
+					<div class="col-sm-3" align="rigth"
+						[ngClass]="{'alert alert-danger': !form.controls.saldoDezReais.valid 
+							&& !form.controls.saldoDezReais.pristine
+						}">
+						<input formControlName="saldoDezReais" [(ngModel)]="caixa.saldoDezReais" type="text" class="form-control"  name="saldoDezReais" id="saldoDezReais" placeholder="Preencha o saldo de R$10"
+						currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/>
+					</div>
+					<label for="saldo" class="col-sm-3 control-label">Saldo R$20:</label>
+					<div class="col-sm-3">
+						<input formControlName="saldoDezReais" [(ngModel)]="caixa.saldoVinteReais" type="text" class="form-control"  name="saldoVinteReais" id="saldoVinteReais" placeholder="Preencha o saldo de R$20"
+						currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/>
+					</div>
+					<label for="saldo" class="col-sm-3 control-label">Saldo R$50:</label>
+					<div class="col-sm-3">
+						<input formControlName="saldoCinquentaReais" [(ngModel)]="caixa.saldoCinquentaReais" type="text" class="form-control"  name="saldoCinquentaReais" id="saldoCinquentaReais" placeholder="Preencha o saldo de R$50"
+						currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/>
+					</div>
+					<label for="saldo" class="col-sm-3 control-label">Saldo R$100:</label>
+					<div class="col-sm-3">
+						<input  formControlName="saldoCemReais" [(ngModel)]="caixa.saldoCemReais" type="text" ng-required class="form-control"  name="saldoCemReais" id="saldoCemReais" placeholder="Preencha Preencha o saldo de R$100"
+						currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xl-12" align="center">
+			
+			<div class="col-xl-12 col-sm-4">
+				<input type="button" ng-hide="formCaixa.$invalid" (click)="salvar()" class="btn btn-primary btn-block col-xl-12 col-sm-4" value="Salvar">
+			</div>
+		</div>
+	</div>
+</div>

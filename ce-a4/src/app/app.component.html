@@ -1,0 +1,32 @@
+<div class="container">
+	<nav class="navbar navbar-default container container col-sm-12">
+		<div class="container container-ce">
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar-principal" aria-expanded="false">
+		        <span class="sr-only">Anterar Navegação</span>
+	<!-- 	        <span class="glyphicon glyphicon-resize-full"></span> -->
+		        <span class="glyphicon glyphicon-resize-full"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#/usuarios"><span class="glyphicon glyphicon-home">
+		      	</span>
+		      	Caixa Eletrônico
+		      </a>
+	    	</div>
+			<div class="collapse navbar-collapse container col-sm-8" id="navbar-principal">
+				<ul class="nav navbar-nav container container col-sm-8">
+					<li id="li-1"><a class="navbar-brand" routerLink = "/usuarios"><span class="glyphicon glyphicon-user"></span>Usuarios</a>
+					</li>
+					<li id="li-2">
+						<a class="navbar-brand" routerLink="/caixas"><span class="glyphicon glyphicon-inbox"></span>Caixas</a>
+					</li>
+					<li id="li-2">
+						<a class="navbar-brand" routerLink="/saques" ><span class="glyphicon glyphicon-briefcase"></span>Saques</a>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div ng-view></div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+<div class="container container-ce">
+	<h3 class="titulo-tab">Lista de Caixas</h3>
+	<th></th>
+	<a class="btn btn-primary btn-block" routerLink="/caixa"> Novo caixa</a>
+	<th></th>
+	<input class="form-control" [(ngModel)]="criterio" type="text" placeholder="Digite o nome.."/>
+	<div style="overflow:auto">
+		<table ng-show="caixas.length > 0" class="table">
+			<tr>
+				<th></th>
+				<th><a href="">Nome</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$10</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$20</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$50</a></th>
+				<th class="hidden-xs"><a href="">Saldo R$100</a></th>
+				<th class="hidden-xs"></th>
+			</tr>
+			<tr *ngFor="let caixa of caixas">
+				<td><a class="btn btn-primary" >Sacar</a></td>
+				<td><a routerLink="/caixa/{{caixa.id}}">{{caixa.nome}}</a></td>
+				<td class="hidden-xs">{{caixa.saldoDezReais | currency:'BRL':true}}</td>
+				<td class="hidden-xs">{{caixa.saldoVinteReais | currency:'BRL':true}}</td>
+				<td class="hidden-xs">{{caixa.saldoCinquentaReais | currency:'BRL':true}}</td>
+				<td class="hidden-xs">{{caixa.saldoCemReais | currency:'BRL':true}}</td>
+				<td><a class="btn btn-primary btn-block" routerLink="/caixa/{{caixa.id}}"> Editar </a></td>
+			</tr>
+			
+		</table>
+		<hr/>
+	</div>
+</div>

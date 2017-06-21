@@ -1,0 +1,48 @@
+<div class="jumbotron">
+	<div class="container container-ce">
+
+		<h3 class="titulo-tab">Saque {{saque.caixa ? saque.caixa.nome : ''}}</h3>
+		<th></th>
+		<th></th>
+			<a class="btn btn-primary" href="#/saques"> voltar</a>
+		<th></th>
+		<div class="alert alert-danger" role="alert" *ngIf="(msgErro)">
+			<span class="alert alert-danger" aria-hidden="true"></span>
+			{{msgErro}}
+		</div>
+		<div class="alert alert-info" role="alert" *ngIf="(msg)">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			{{msg}}
+		</div>
+		<div class="form-horizontal form-horizontal-ce">
+			<form name="formSaque">
+				<div class="form-group form-group-ce">
+					<label for="nome" class="col-sm-2 col-md-2 control-label">Cliente:</label>
+					<div class="col-sm-4">
+						<select  [compareWith]="usuarioById" [(ngModel)]="saque.usuario" id="usuario" name="usuario" class="form-control" required="true">
+							<option *ngFor="let usuario of usuarios" [ngValue]="usuario" [ngValue]="usuario" label="{{usuario.nome + '( ' + usuario.saldo + ' )'}}"> 
+								
+							</option>
+						</select>
+					</div>
+					<label for="caixa" class="col-sm-2 col-md-2 control-label">Caixa:</label>
+					<div class="col-sm-4">
+						<select [compareWith]="caixaById" [(ngModel)]="saque.caixa" id="caixa" name="caixa" class="form-control" required="true">
+							<option *ngFor="let caixa of caixas" label="{{caixa.nome}}" [ngValue]="caixa" ></option>
+						</select>
+					</div>
+					<label for="valor" class="col-sm-2 col-md-2 control-label">Valor:</label>
+					<div class="col-sm-4">
+						<input [(ngModel)]="saque.valor" class="form-control"  name="valor" id="valor" placeholder="Preencha o valor"  required="true"
+						currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" />
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xl-12" align="center">
+			<div class="col-xl-12 col-sm-4">
+				<input type="button" (click)="salvar(saque)" class="btn btn-primary btn-block col-xl-12 col-sm-4" value="Salvar" ng-show="formSaque.$valid">
+			</div>
+		</div>
+	</div>
+</div>

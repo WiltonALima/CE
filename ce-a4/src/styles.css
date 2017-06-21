@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.container-ce{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.form-horizontal-ce{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.form-group-ce{
+	margin-top:20px;
+	margin-bottom:20px;
+}

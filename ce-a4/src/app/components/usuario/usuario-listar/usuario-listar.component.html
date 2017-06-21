@@ -1,0 +1,23 @@
+<div class="container container-ce">
+	<h3 class="titulo-tab">Lista de Usuários</h3>
+	<th></th>
+	<a class="btn btn-primary btn-block" routerLink="/usuario"> Novo usuario</a>
+	<th></th>
+	<input class="form-control" [(ngModel)]="criterio" type="text" placeholder="Digite algo"/>
+	<div style="overflow:auto">
+		<table ng-show="usuarios.length > 0" class="table">
+			<tr>
+				<th><a href="" (click)="ordenarPor('nome')">Nome</a></th>
+				<th><a href="" (click)="ordenarPor('saldo')">Saldo</a></th>
+				<th></th>
+			</tr>
+			<tr  *ngFor="let usuario of usuarios">
+				<td><a routerLink="/usuario/{{usuario.id}}">{{usuario.nome}}</a></td>
+				<td>{{usuario.saldo | currency:'BRL':true}}	</td>
+				<td><a class="btn btn-primary btn-block" routerLink="/usuario/{{usuario.id}}"> Editar </a></td>
+			</tr>
+			
+		</table>
+		<hr/>
+	</div>
+</div>

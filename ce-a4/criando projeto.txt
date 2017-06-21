@@ -1,0 +1,1546 @@
+Microsoft Windows [versão 10.0.14393]
+(c) 2016 Microsoft Corporation. Todos os direitos reservados.
+
+C:\WINDOWS\system32>cd C:\dev\workspaces\neon\CE
+
+C:\dev\workspaces\neon\CE>ng new ce-a4
+installing ng
+  create .editorconfig
+  create README.md
+  create src\app\app.component.css
+  create src\app\app.component.html
+  create src\app\app.component.spec.ts
+  create src\app\app.component.ts
+  create src\app\app.module.ts
+  create src\assets\.gitkeep
+  create src\environments\environment.prod.ts
+  create src\environments\environment.ts
+  create src\favicon.ico
+  create src\index.html
+  create src\main.ts
+  create src\polyfills.ts
+  create src\styles.css
+  create src\test.ts
+  create src\tsconfig.app.json
+  create src\tsconfig.spec.json
+  create src\typings.d.ts
+  create .angular-cli.json
+  create e2e\app.e2e-spec.ts
+  create e2e\app.po.ts
+  create e2e\tsconfig.e2e.json
+  create .gitignore
+  create karma.conf.js
+  create package.json
+  create protractor.conf.js
+  create tsconfig.json
+  create tslint.json
+Directory is already under version control. Skipping initialization of git.
+Installing packages for tooling via npm.
+Installed packages for tooling via npm.
+Project 'ce-a4' successfully created.
+
+C:\dev\workspaces\neon\CE>ng g model usuario
+Invalid blueprint: model
+
+C:\dev\workspaces\neon\CE>ng g module usuario
+You have to be inside an Angular CLI project in order to use the generate command.
+
+C:\dev\workspaces\neon\CE>cd ce-a4
+
+C:\dev\workspaces\neon\CE\ce-a4>ng g module usuario
+installing module
+  create src\app\usuario\usuario.module.ts
+
+C:\dev\workspaces\neon\CE\ce-a4>ng d module usuario
+The destroy command is not supported by Angular CLI.
+
+C:\dev\workspaces\neon\CE\ce-a4>ng
+ng build <options...>
+  Builds your app and places it into the output path (dist/ by default).
+  aliases: b
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --stats-json (Boolean) (Default: false) Generates a `stats.json` file which can be analyzed using tools such as: `webpack-bundle-analyzer` or https://webpack.github.io/analyse.
+    aliases: --statsJson
+
+ng completion <options...>
+  Adds autocomplete functionality to `ng` commands and subcommands.
+  --all (Boolean) (Default: true) Generate a completion script compatible with both bash and zsh.
+    aliases: -a, -all
+  --bash (Boolean) (Default: false) Generate a completion script for bash.
+    aliases: -b, -bash
+  --zsh (Boolean) (Default: false) Generate a completion script for zsh.
+    aliases: -z, -zsh
+
+ng doc <keyword>
+  Opens the official Angular documentation for a given keyword.
+
+ng e2e <options...>
+  Run e2e tests in existing project.
+  aliases: e
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --port (Number) (Default: 0) The port to use to serve the application.
+    aliases: -p <value>, -port <value>
+  --host (String) (Default: localhost) Listens only on localhost by default.
+    aliases: -H <value>, -host <value>
+  --proxy-config (Path) Proxy configuration file.
+    aliases: -pc <value>, --proxyConfig <value>
+  --ssl (Boolean) (Default: false) Serve using HTTPS.
+    aliases: -ssl
+  --ssl-key (String) (Default: ssl/server.key) SSL key to use for serving HTTPS.
+    aliases: --sslKey <value>
+  --ssl-cert (String) (Default: ssl/server.crt) SSL certificate to use for serving HTTPS.
+    aliases: --sslCert <value>
+  --open (Boolean) (Default: false) Opens the url in default browser.
+    aliases: -o, -open
+  --live-reload (Boolean) (Default: true) Whether to reload the page on change, using live-reload.
+    aliases: -lr, --liveReload
+  --live-reload-client (String) Specify the URL that the live reload browser client will use.
+    aliases: --liveReloadClient <value>
+  --hmr (Boolean) (Default: false) Enable hot module replacement.
+    aliases: -hmr
+  --config (String) Use a specific config file. Defaults to the protractor config file in angular-cli.json.
+    aliases: -c <value>, --config <value>
+  --specs (Array) (Default: ) Override specs in the protractor config. Can send in multiple specs by repeating flag (ng e2e --specs=spec1.ts --specs=spec2.ts).
+    aliases: -sp <value>, --specs <value>
+  --element-explorer (Boolean) (Default: false) Start Protractor's Element Explorer for debugging.
+    aliases: -ee, --elementExplorer
+  --webdriver-update (Boolean) (Default: true) Try to update webdriver.
+    aliases: -wu, --webdriverUpdate
+  --serve (Boolean) (Default: true) Compile and Serve the app. All non-reload related serve options are also available (e.g. --port=4400).
+    aliases: -s, --serve
+
+ng eject <options...>
+  Ejects your app and output the proper webpack configuration and scripts.
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --force (Boolean) Overwrite any webpack.config.js and npm scripts already existing.
+    aliases: --force
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+
+ng generate <blueprint> <options...>
+  Generates and/or modifies files based on a blueprint.
+  aliases: g
+  --dry-run (Boolean) (Default: false) Run through without making any changes.
+    aliases: -d, --dryRun
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+
+ng get <options...>
+  Get a value from the configuration. Example: ng get [key]
+  --global (Boolean) (Default: false) Get the value in the global configuration (in your home directory).
+    aliases: --global
+
+ng help <command-name (Default: all)>
+  Shows help for the CLI.
+
+ng lint <options...>
+  Lints code in existing project.
+  aliases: l
+  --fix (Boolean) (Default: false) Fixes linting errors (may overwrite linted files).
+    aliases: -fix
+  --type-check (Boolean) (Default: false) Controls the type check for linting.
+    aliases: --typeCheck
+  --force (Boolean) (Default: false) Succeeds even if there was linting errors.
+    aliases: --force
+  --format (String) (Default: prose) Output format (prose, json, stylish, verbose, pmd, msbuild, checkstyle, vso, fileslist).
+    aliases: --format <value>
+
+ng new <options...>
+  Creates a new directory and a new Angular app eg. "ng new [name]".
+  --dry-run (Boolean) (Default: false) Run through without making any changes.
+    aliases: -d, --dryRun
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --skip-install (Boolean) (Default: false) Skip installing packages.
+    aliases: -si, --skipInstall
+  --skip-git (Boolean) (Default: false) Skip initializing a git repository.
+    aliases: -sg, --skipGit
+  --skip-tests (Boolean) (Default: false) Skip creating spec files.
+    aliases: -st, --skipTests
+  --skip-commit (Boolean) (Default: false) Skip committing the first commit to git.
+    aliases: -sc, --skipCommit
+  --directory (String) The directory name to create the app in.
+    aliases: -dir <value>, --directory <value>
+  --source-dir (String) (Default: src) The name of the source directory.
+    aliases: -sd <value>, --sourceDir <value>
+  --style (String) (Default: css) The style file default extension.
+    aliases: --style <value>
+  --prefix (String) (Default: app) The prefix to use for all component selectors.
+    aliases: -p <value>, --prefix <value>
+  --routing (Boolean) (Default: false) Generate a routing module.
+    aliases: --routing
+  --inline-style (Boolean) (Default: false) Should have an inline style.
+    aliases: -is, --inlineStyle
+  --inline-template (Boolean) (Default: false) Should have an inline template.
+    aliases: -it, --inlineTemplate
+
+ng serve <options...>
+  Builds and serves your app, rebuilding on file changes.
+  aliases: server, s
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: true) Rebuild on change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --port (Number) (Default: 4200) Port to listen to for serving.
+    aliases: -p <value>, -port <value>
+  --host (String) (Default: localhost) Listens only on localhost by default.
+    aliases: -H <value>, -host <value>
+  --proxy-config (Path) Proxy configuration file.
+    aliases: -pc <value>, --proxyConfig <value>
+  --ssl (Boolean) (Default: false) Serve using HTTPS.
+    aliases: -ssl
+  --ssl-key (String) (Default: ssl/server.key) SSL key to use for serving HTTPS.
+    aliases: --sslKey <value>
+  --ssl-cert (String) (Default: ssl/server.crt) SSL certificate to use for serving HTTPS.
+    aliases: --sslCert <value>
+  --open (Boolean) (Default: false) Opens the url in default browser.
+    aliases: -o, -open
+  --live-reload (Boolean) (Default: true) Whether to reload the page on change, using live-reload.
+    aliases: -lr, --liveReload
+  --live-reload-client (String) Specify the URL that the live reload browser client will use.
+    aliases: --liveReloadClient <value>
+  --hmr (Boolean) (Default: false) Enable hot module replacement.
+    aliases: -hmr
+
+ng set <options...>
+  Set a value in the configuration.
+  --global (Boolean) (Default: false) Set the value in the global configuration rather than in your project's.
+    aliases: -g, --global
+
+ng test <options...>
+  Run unit tests in existing project.
+  aliases: t
+  --watch (Boolean) Run build when files change.
+    aliases: -w, --watch
+  --code-coverage (Boolean) (Default: false) Coverage report will be in the coverage/ directory.
+    aliases: -cc, --codeCoverage
+  --config (String) Use a specific config file. Defaults to the karma config file in .angular-cli.json.
+    aliases: -c <value>, --config <value>
+  --single-run (Boolean) Run tests a single time.
+    aliases: -sr, --singleRun
+  --progress (Boolean) (Default: true) Log progress to the console while in progress.
+    aliases: --progress
+  --browsers (String) Override which browsers tests are run against.
+    aliases: --browsers <value>
+  --colors (Boolean) Enable or disable colors in the output (reporters and logs).
+    aliases: --colors
+  --log-level (String) Level of logging.
+    aliases: --logLevel <value>
+  --port (Number) Port where the web server will be listening.
+    aliases: -port <value>
+  --reporters (String) List of reporters to use.
+    aliases: --reporters <value>
+  --sourcemaps (Boolean) (Default: true) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+
+ng version <options...>
+  Outputs Angular CLI version.
+  aliases: v, --version, -v
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: --verbose
+
+ng xi18n <options...>
+  Extracts i18n messages from source code.
+  --i18n-format (String) (Default: xlf) Output format for the generated file.
+    aliases: -f <value>, -xmb (--i18n-format=xmb), -xlf (--i18n-format=xlf), --xliff (--i18n-format=xlf), --i18nFormat <value>
+  --output-path (Path) (Default: null) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while running.
+    aliases: --progress
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+  --locale (String) Specifies the source language of the application.
+    aliases: -l <value>, --locale <value>
+  --out-file (String) Name of the file to output.
+    aliases: -of <value>, --outFile <value>
+
+
+C:\dev\workspaces\neon\CE\ce-a4>ng help module
+
+C:\dev\workspaces\neon\CE\ce-a4>ng help
+ng build <options...>
+  Builds your app and places it into the output path (dist/ by default).
+  aliases: b
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --stats-json (Boolean) (Default: false) Generates a `stats.json` file which can be analyzed using tools such as: `webpack-bundle-analyzer` or https://webpack.github.io/analyse.
+    aliases: --statsJson
+
+ng completion <options...>
+  Adds autocomplete functionality to `ng` commands and subcommands.
+  --all (Boolean) (Default: true) Generate a completion script compatible with both bash and zsh.
+    aliases: -a, -all
+  --bash (Boolean) (Default: false) Generate a completion script for bash.
+    aliases: -b, -bash
+  --zsh (Boolean) (Default: false) Generate a completion script for zsh.
+    aliases: -z, -zsh
+
+ng doc <keyword>
+  Opens the official Angular documentation for a given keyword.
+
+ng e2e <options...>
+  Run e2e tests in existing project.
+  aliases: e
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --port (Number) (Default: 0) The port to use to serve the application.
+    aliases: -p <value>, -port <value>
+  --host (String) (Default: localhost) Listens only on localhost by default.
+    aliases: -H <value>, -host <value>
+  --proxy-config (Path) Proxy configuration file.
+    aliases: -pc <value>, --proxyConfig <value>
+  --ssl (Boolean) (Default: false) Serve using HTTPS.
+    aliases: -ssl
+  --ssl-key (String) (Default: ssl/server.key) SSL key to use for serving HTTPS.
+    aliases: --sslKey <value>
+  --ssl-cert (String) (Default: ssl/server.crt) SSL certificate to use for serving HTTPS.
+    aliases: --sslCert <value>
+  --open (Boolean) (Default: false) Opens the url in default browser.
+    aliases: -o, -open
+  --live-reload (Boolean) (Default: true) Whether to reload the page on change, using live-reload.
+    aliases: -lr, --liveReload
+  --live-reload-client (String) Specify the URL that the live reload browser client will use.
+    aliases: --liveReloadClient <value>
+  --hmr (Boolean) (Default: false) Enable hot module replacement.
+    aliases: -hmr
+  --config (String) Use a specific config file. Defaults to the protractor config file in angular-cli.json.
+    aliases: -c <value>, --config <value>
+  --specs (Array) (Default: ) Override specs in the protractor config. Can send in multiple specs by repeating flag (ng e2e --specs=spec1.ts --specs=spec2.ts).
+    aliases: -sp <value>, --specs <value>
+  --element-explorer (Boolean) (Default: false) Start Protractor's Element Explorer for debugging.
+    aliases: -ee, --elementExplorer
+  --webdriver-update (Boolean) (Default: true) Try to update webdriver.
+    aliases: -wu, --webdriverUpdate
+  --serve (Boolean) (Default: true) Compile and Serve the app. All non-reload related serve options are also available (e.g. --port=4400).
+    aliases: -s, --serve
+
+ng eject <options...>
+  Ejects your app and output the proper webpack configuration and scripts.
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: false) Run build when files change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --force (Boolean) Overwrite any webpack.config.js and npm scripts already existing.
+    aliases: --force
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+
+ng generate <blueprint> <options...>
+  Generates and/or modifies files based on a blueprint.
+  aliases: g
+  --dry-run (Boolean) (Default: false) Run through without making any changes.
+    aliases: -d, --dryRun
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+
+ng get <options...>
+  Get a value from the configuration. Example: ng get [key]
+  --global (Boolean) (Default: false) Get the value in the global configuration (in your home directory).
+    aliases: --global
+
+ng help <command-name (Default: all)>
+  Shows help for the CLI.
+
+ng lint <options...>
+  Lints code in existing project.
+  aliases: l
+  --fix (Boolean) (Default: false) Fixes linting errors (may overwrite linted files).
+    aliases: -fix
+  --type-check (Boolean) (Default: false) Controls the type check for linting.
+    aliases: --typeCheck
+  --force (Boolean) (Default: false) Succeeds even if there was linting errors.
+    aliases: --force
+  --format (String) (Default: prose) Output format (prose, json, stylish, verbose, pmd, msbuild, checkstyle, vso, fileslist).
+    aliases: --format <value>
+
+ng new <options...>
+  Creates a new directory and a new Angular app eg. "ng new [name]".
+  --dry-run (Boolean) (Default: false) Run through without making any changes.
+    aliases: -d, --dryRun
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --skip-install (Boolean) (Default: false) Skip installing packages.
+    aliases: -si, --skipInstall
+  --skip-git (Boolean) (Default: false) Skip initializing a git repository.
+    aliases: -sg, --skipGit
+  --skip-tests (Boolean) (Default: false) Skip creating spec files.
+    aliases: -st, --skipTests
+  --skip-commit (Boolean) (Default: false) Skip committing the first commit to git.
+    aliases: -sc, --skipCommit
+  --directory (String) The directory name to create the app in.
+    aliases: -dir <value>, --directory <value>
+  --source-dir (String) (Default: src) The name of the source directory.
+    aliases: -sd <value>, --sourceDir <value>
+  --style (String) (Default: css) The style file default extension.
+    aliases: --style <value>
+  --prefix (String) (Default: app) The prefix to use for all component selectors.
+    aliases: -p <value>, --prefix <value>
+  --routing (Boolean) (Default: false) Generate a routing module.
+    aliases: --routing
+  --inline-style (Boolean) (Default: false) Should have an inline style.
+    aliases: -is, --inlineStyle
+  --inline-template (Boolean) (Default: false) Should have an inline template.
+    aliases: -it, --inlineTemplate
+
+ng serve <options...>
+  Builds and serves your app, rebuilding on file changes.
+  aliases: server, s
+  --target (String) (Default: development) Defines the build target.
+    aliases: -t <value>, -dev (--target=development), -prod (--target=production), --target <value>
+  --environment (String) Defines the build environment.
+    aliases: -e <value>, --environment <value>
+  --output-path (Path) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --aot (Boolean) Build using Ahead of Time compilation.
+    aliases: -aot
+  --sourcemaps (Boolean) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --vendor-chunk (Boolean) (Default: true) Use a separate bundle containing only vendor libraries.
+    aliases: -vc, --vendorChunk
+  --base-href (String) Base url for the application being built.
+    aliases: -bh <value>, --baseHref <value>
+  --deploy-url (String) URL where files will be deployed.
+    aliases: -d <value>, --deployUrl <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: -v, --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while building.
+    aliases: -pr, --progress
+  --i18n-file (String) Localization file to use for i18n.
+    aliases: --i18nFile <value>
+  --i18n-format (String) Format of the localization file specified with --i18n-file.
+    aliases: --i18nFormat <value>
+  --locale (String) Locale to use for i18n.
+    aliases: --locale <value>
+  --extract-css (Boolean) Extract css from global styles onto css files instead of js ones.
+    aliases: -ec, --extractCss
+  --watch (Boolean) (Default: true) Rebuild on change.
+    aliases: -w, --watch
+  --output-hashing=none|all|media|bundles (String) Define the output filename cache-busting hashing mode.
+    aliases: -oh <value>, --outputHashing <value>
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name or index to use.
+    aliases: -a <value>, -app <value>
+  --port (Number) (Default: 4200) Port to listen to for serving.
+    aliases: -p <value>, -port <value>
+  --host (String) (Default: localhost) Listens only on localhost by default.
+    aliases: -H <value>, -host <value>
+  --proxy-config (Path) Proxy configuration file.
+    aliases: -pc <value>, --proxyConfig <value>
+  --ssl (Boolean) (Default: false) Serve using HTTPS.
+    aliases: -ssl
+  --ssl-key (String) (Default: ssl/server.key) SSL key to use for serving HTTPS.
+    aliases: --sslKey <value>
+  --ssl-cert (String) (Default: ssl/server.crt) SSL certificate to use for serving HTTPS.
+    aliases: --sslCert <value>
+  --open (Boolean) (Default: false) Opens the url in default browser.
+    aliases: -o, -open
+  --live-reload (Boolean) (Default: true) Whether to reload the page on change, using live-reload.
+    aliases: -lr, --liveReload
+  --live-reload-client (String) Specify the URL that the live reload browser client will use.
+    aliases: --liveReloadClient <value>
+  --hmr (Boolean) (Default: false) Enable hot module replacement.
+    aliases: -hmr
+
+ng set <options...>
+  Set a value in the configuration.
+  --global (Boolean) (Default: false) Set the value in the global configuration rather than in your project's.
+    aliases: -g, --global
+
+ng test <options...>
+  Run unit tests in existing project.
+  aliases: t
+  --watch (Boolean) Run build when files change.
+    aliases: -w, --watch
+  --code-coverage (Boolean) (Default: false) Coverage report will be in the coverage/ directory.
+    aliases: -cc, --codeCoverage
+  --config (String) Use a specific config file. Defaults to the karma config file in .angular-cli.json.
+    aliases: -c <value>, --config <value>
+  --single-run (Boolean) Run tests a single time.
+    aliases: -sr, --singleRun
+  --progress (Boolean) (Default: true) Log progress to the console while in progress.
+    aliases: --progress
+  --browsers (String) Override which browsers tests are run against.
+    aliases: --browsers <value>
+  --colors (Boolean) Enable or disable colors in the output (reporters and logs).
+    aliases: --colors
+  --log-level (String) Level of logging.
+    aliases: --logLevel <value>
+  --port (Number) Port where the web server will be listening.
+    aliases: -port <value>
+  --reporters (String) List of reporters to use.
+    aliases: --reporters <value>
+  --sourcemaps (Boolean) (Default: true) Output sourcemaps.
+    aliases: -sm, --sourcemap, --sourcemaps
+  --poll (Number) Enable and define the file watching poll time period (milliseconds).
+    aliases: -poll <value>
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+
+ng version <options...>
+  Outputs Angular CLI version.
+  aliases: v, --version, -v
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: --verbose
+
+ng xi18n <options...>
+  Extracts i18n messages from source code.
+  --i18n-format (String) (Default: xlf) Output format for the generated file.
+    aliases: -f <value>, -xmb (--i18n-format=xmb), -xlf (--i18n-format=xlf), --xliff (--i18n-format=xlf), --i18nFormat <value>
+  --output-path (Path) (Default: null) Path where output will be placed.
+    aliases: -op <value>, --outputPath <value>
+  --verbose (Boolean) (Default: false) Adds more details to output logging.
+    aliases: --verbose
+  --progress (Boolean) (Default: true) Log progress to the console while running.
+    aliases: --progress
+  --app (String) Specifies app name to use.
+    aliases: -a <value>, -app <value>
+  --locale (String) Specifies the source language of the application.
+    aliases: -l <value>, --locale <value>
+  --out-file (String) Name of the file to output.
+    aliases: -of <value>, --outFile <value>
+
+
+C:\dev\workspaces\neon\CE\ce-a4>ng serve
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200 **
+Hash: 91ddbd05e21ffb8fd44a
+Time: 11875ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial] [rendered]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 3.7 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial] [rendered]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial] [rendered]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+webpack: Compiled successfully.
+^CDeseja finalizar o arquivo em lotes (S/N)? s
+
+C:\dev\workspaces\neon\CE\ce-a4>ng build
+Hash: 6a95bec9b98dc03ebd86
+Time: 9520ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial] [rendered]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 3.69 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial] [rendered]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.1 MB [initial] [rendered]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+
+C:\dev\workspaces\neon\CE\ce-a4>ng g class models/usuario
+installing class
+  create src\app\models\usuario.ts
+
+C:\dev\workspaces\neon\CE\ce-a4>ng g component usuario
+installing component
+  create src\app\usuario\usuario.component.css
+  create src\app\usuario\usuario.component.html
+  create src\app\usuario\usuario.component.spec.ts
+  create src\app\usuario\usuario.component.ts
+  update src\app\app.module.ts
+
+C:\dev\workspaces\neon\CE\ce-a4>ng serve
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200 **
+Hash: ee450d81c0f83ce0a13d
+Time: 10527ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial] [rendered]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 3.79 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial] [rendered]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial] [rendered]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts (7,34): Cannot find module './usuario/usuario.component'.
+
+ERROR in Error encountered resolving symbol values statically. Could not resolve ./usuario/usuario.component relative to C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts., resolving symbol AppModule in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts, resolving symbol AppModule in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts (7,34): Cannot find module './usuario/usuario.component'.
+
+ERROR in ./src/app/app.module.ts
+Module not found: Error: Can't resolve './usuario/usuario.component' in 'C:\dev\workspaces\neon\CE\ce-a4\src\app'
+ @ ./src/app/app.module.ts 12:0-63
+ @ ./src/main.ts
+ @ multi webpack-dev-server/client?http://localhost:4200 ./src/main.ts
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: 6c0b8d53506ac98fa10a
+Time: 2210ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 3.73 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts (11,5): Cannot find name 'UsuarioComponent'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/app.module.ts (11,5): Cannot find name 'UsuarioComponent'.
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: 91ddbd05e21ffb8fd44a
+Time: 1553ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 3.7 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+^CDeseja finalizar o arquivo em lotes (S/N)?
+^C
+C:\dev\workspaces\neon\CE\ce-a4>ng g component components/usuario/usuario-listar
+installing component
+  create src\app\components\usuario\usuario-listar\usuario-listar.component.css
+  create src\app\components\usuario\usuario-listar\usuario-listar.component.html
+  create src\app\components\usuario\usuario-listar\usuario-listar.component.spec.ts
+  create src\app\components\usuario\usuario-listar\usuario-listar.component.ts
+  update src\app\app.module.ts
+
+C:\dev\workspaces\neon\CE\ce-a4>ng serve
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200 **
+Hash: 7cb1148457af7c663c30
+Time: 10872ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial] [rendered]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.05 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial] [rendered]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial] [rendered]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: c21a612d70acf4f96f7e
+Time: 327ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 5168931f604671b6e78f
+Time: 262ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 5168931f604671b6e78f
+Time: 252ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+webpack: wait until bundle finished: /
+Hash: 5168931f604671b6e78f
+Time: 248ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 87c17994593e7e0162b7
+Time: 328ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 87c17994593e7e0162b7
+Time: 214ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 87c17994593e7e0162b7
+Time: 194ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+webpack: wait until bundle finished: /
+Hash: 87c17994593e7e0162b7
+Time: 184ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 87c17994593e7e0162b7
+Time: 204ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 8d19c9287e75ee67b257
+Time: 198ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.04 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3e879181536bc5bace41
+Time: 174ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.05 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3e879181536bc5bace41
+Time: 155ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.05 kB {3} [initial]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: bd89f9f870de321fc229
+Time: 216ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.03 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 11c61c2a4ff6721894e2
+Time: 191ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.03 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 813063440227c83d980c
+Time: 223ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.03 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: be6972d7f9f2759d4184
+Time: 216ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.03 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 57446cd32c72ecb2136c
+Time: 219ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {4} [initial]
+chunk    {1} main.bundle.js, main.bundle.js.map (main) 7.08 kB {3} [initial] [rendered]
+chunk    {2} styles.bundle.js, styles.bundle.js.map (styles) 10.5 kB {4} [initial]
+chunk    {3} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {4} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+^CDeseja finalizar o arquivo em lotes (S/N)? s
+
+C:\dev\workspaces\neon\CE\ce-a4>npm search bootstrap
+npm WARN Building the local index for the first time, please be patient
+npm WARN notice update to the newest npm client for improved search results: npmjs.com/get-npm
+NAME                              DESCRIPTION                                                  AUTHOR               DATE       VERSION     KEYWORDS
+@ng-bootstrap/ng-bootstrap        Angular 2 powered Bootstrap                                  =ng-bootstrap        2017-05-16 1.0.0-alph…
+@vjpr/bootstrap-loader            Boostrap for Webpack                                         =vjpr                2017-02-21 2.0.0-beta…
+angular-bootstrap-colorpicker     Native AngularJS colorpicker directive                       =buberdds            2017-05-02 3.0.31
+angular-bootstrap-confirm         Displays a bootstrap confirmation popover when clicking the… =mattlewis92         2017-04-12 2.5.1
+angular-bootstrap-datetimepicker  This directive allows you to add a datetime-picker to your…  =dalelotts           2017-03-31 1.1.4
+angular-ui-bootstrap              Native AngularJS (Angular) directives for Bootstrap          =foxandxss…          2017-01-28 2.5.0
+appium-android-bootstrap          Node interface to Appium Android Bootstrap, the java…        =dangraham…          2017-05-01 2.9.1
+bootstrap                         The most popular front-end framework for developing…         =twbs                2016-07-25 3.3.7
+bootstrap-arabic                  The most popular front-end framework for developing…         =zeroxme             2016-02-19 3.3.6
+bootstrap-datepicker              A datepicker for Bootstrap forked from Stefan Petre's (of…   =acrobat             2016-08-05 1.6.4
+bootstrap-daterangepicker         Date range picker component for Bootstrap                    =g0blin =vperron…    2017-01-17 2.1.25
+bootstrap-loader                  Boostrap for Webpack                                         =alex.fedoseev…      2017-05-04 2.1.0
+bootstrap-sass                    bootstrap-sass is a Sass-powered version of Bootstrap 3,…    =glebm =twbs         2016-07-25 3.3.7
+bootstrap-sweetalert              A beautiful 'replacement' for JavaScript's alert             =lipis               2016-07-21 1.0.1
+bootstrap-table                   An extended Bootstrap table with radio, checkbox, sort,…     =wenzhixin           2017-02-24 1.11.2
+bootstrap-v4-dev                  The most popular front-end framework for developing…         =javier.alejandro.c… 2016-10-20 4.0.0-alph…
+bootstrap-vue                     Bootstrap 4 Components for Vue.js 2                          =pi0                 2017-05-18 0.16.1
+bootswatch                        Bootswatch is a collection of themes for Bootstrap.          =robloach…           2016-07-30 3.3.7
+democracyos-bootstrap             The most popular front-end framework for developing…         =frn                 2016-10-31 4.0.0-alph…
+ember-bootstrap                   Twitter Bootstrap components for Ember.js                    =simonihmig          2017-04-26 1.0.0-alph…
+eonasdan-bootstrap-datetimepicker A date/time picker component designed to work with…          =eonasdan            2017-02-28 4.17.47
+jade-bootstrap                    Bootstrap framework written completely using mixins in JADE  =rajasegar           2017-05-16 1.0.14
+newforms-bootstrap                Bootstrap integration for newforms                           =insin               2015-03-11 2.0.0
+ng2-bootstrap-base-modified       Native Angular Bootstrap Components Typeahead modified       =joeoh1359           2017-03-28 1.4.2
+ngx-bootstrap                     Native Angular Bootstrap Components                          =valorkin            2017-04-10 1.6.6
+patternfly-bootstrap-treeview     Tree View for Twitter Bootstrap                              =priley86 =skateman  2017-04-26 2.1.3
+react-bootstrap                   Bootstrap 3 components built with React                      =stevoland…          2017-04-26 0.31.0
+react-bootstrap-button-loader     React ButtonLoader with Bootstrap flavor                     =yury-dymov          2017-05-19 1.0.8
+react-bootstrap-date-picker       React-Bootstrap based date picker.                           =pushtell            2017-03-21 5.0.1
+react-bootstrap-table             It's a react table for bootstrap                             =allenfang           2017-05-22 3.3.7
+react-bootstrap-toggle            A React version of the bootstrap-toggle without the JQuery…  =arnthor3            2017-04-15 2.0.6
+react-bootstrap-typeahead         React-based typeahead using the Bootstrap theme              =ericgio             2017-04-12 1.3.0
+react-router-bootstrap            Integration between React Router and React-Bootstrap         =mtscout6…           2017-04-19 0.24.2
+reactstrap                        React Bootstrap 4 components                                 =eddywashere         2017-05-16 4.6.2
+redux-bootstrap                   Bootstrapping for Redux applications                         =remojansen          2017-03-23 1.2.0
+rosariociudad-bootstrap           The most popular front-end framework for developing…         =democraciaenred     2016-11-11 1.0.3
+select2-bootstrap-css             Simple CSS to make Select2 widgets fit in with Bootstrap     =fk                  2015-02-03 1.4.6
+uniforms-bootstrap3               Bootstrap3 UI components for uniforms.                       =radekm =radekmie…   2017-05-28 1.18.1
+uniforms-bootstrap4               Bootstrap4 UI components for uniforms.                       =radekmie…           2017-05-28 1.18.1
+
+C:\dev\workspaces\neon\CE\ce-a4>npm install bootstrap#3.3.7 --save
+npm ERR! addLocal Could not install C:\dev\workspaces\neon\CE\ce-a4\bootstrap#3.3.7
+npm ERR! Windows_NT 10.0.14393
+npm ERR! argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bootstrap#3.3.7" "--save"
+npm ERR! node v6.10.3
+npm ERR! npm  v3.10.10
+npm ERR! path C:\dev\workspaces\neon\CE\ce-a4\bootstrap#3.3.7
+npm ERR! code ENOENT
+npm ERR! errno -4058
+npm ERR! syscall open
+
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\dev\workspaces\neon\CE\ce-a4\bootstrap#3.3.7'
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\dev\workspaces\neon\CE\ce-a4\bootstrap#3.3.7'
+npm ERR! enoent This is most likely not a problem with npm itself
+npm ERR! enoent and is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     C:\dev\workspaces\neon\CE\ce-a4\npm-debug.log
+
+C:\dev\workspaces\neon\CE\ce-a4>npm install bootstrap@3.3.7 --save
+ce-a4@0.0.0 C:\dev\workspaces\neon\CE\ce-a4
+`-- bootstrap@3.3.7
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+C:\dev\workspaces\neon\CE\ce-a4>ng serve
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200 **
+ 11% building modules 9/15 modules 6 active ...ode_modules\style-loader\addStyles.jswebpack: wait until bundle finished: /
+Hash: 3dce0c5c5b65ca5d56fa
+Time: 12365ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial] [rendered]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial] [rendered]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.08 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial] [rendered]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial] [rendered]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: f7bbed88b48fc3ba210f
+Time: 292ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 6.93 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3dce0c5c5b65ca5d56fa
+Time: 273ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.08 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: fe24a003e243a9fbff07
+Time: 243ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 9f5125adb3f89246a176
+Time: 318ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 793cf234ee839cec554f
+Time: 197ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: bee849b0adbd07dfa6cd
+Time: 189ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: bee849b0adbd07dfa6cd
+Time: 157ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: bee849b0adbd07dfa6cd
+Time: 160ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: bee849b0adbd07dfa6cd
+Time: 151ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 04a85871eed858b6f5d2
+Time: 225ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: b9c08ac7a93f516bc84f
+Time: 195ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 306525c58fcea8de6f15
+Time: 186ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 51c6bb84f950a6aa5fac
+Time: 174ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3cdf2b4d591cf44c4a25
+Time: 235ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial] [rendered]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 48693f063486152ef0f5
+Time: 528ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: d71db32e37a552f0c0bd
+Time: 219ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 7107dc95aa511602e768
+Time: 185ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 7107dc95aa511602e768
+Time: 174ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 82c074cb5591ddf2f25e
+Time: 215ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 1be9794155e93d35aced
+Time: 193ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 13209ed5d71c671b3998
+Time: 244ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: fda2675652a0a2189dcc
+Time: 233ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 48693f063486152ef0f5
+Time: 175ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 1254734242081f635d6b
+Time: 230ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 7898cd841c9c72fa3fb0
+Time: 210ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: e7bb096e3332cc6ce4e3
+Time: 178ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 9e823968dc078901492c
+Time: 292ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 0e2a01c00069a7ba7393
+Time: 177ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 13209ed5d71c671b3998
+Time: 205ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3cdf2b4d591cf44c4a25
+Time: 176ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3cdf2b4d591cf44c4a25
+Time: 203ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 46801895bf1e05e9b5cf
+Time: 194ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.06 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 3cdf2b4d591cf44c4a25
+Time: 184ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 966e29ef2fc3a57328f5
+Time: 222ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.05 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+webpack: Compiling...
+Hash: 399397e95379aba95723
+Time: 182ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 4.47 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,36): Octal literals are not allowed in strict mode.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (18,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (19,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,4): Supplied parameters do not match any signature of call target.
+
+ERROR in C:/dev/workspaces/neon/CE/ce-a4/src/app/components/usuario/usuario-listar/usuario-listar.component.ts (20,36): Octal literals are not available when targeting ECMAScript 5 and higher. Use the syntax '0o0'.
+
+ERROR in ./src/app/components/usuario/usuario-listar/usuario-listar.component.ts
+Module parse failed: C:\dev\workspaces\neon\CE\ce-a4\node_modules\@ngtools\webpack\src\index.js!C:\dev\workspaces\neon\CE\ce-a4\src\app\components\usuario\usuario-listar\usuario-listar.component.ts Invalid number (17:45)
+You may need an appropriate loader to handle this file type.
+|     UsuarioListarComponent.prototype.ngOnInit = function () {
+|         this.usuarios = [
+|             new Usuario(1, 'Usuario 1', 110, 00),
+|             new Usuario(2, 'Usuario 2', 210, 00),
+|             new Usuario(3, 'Usuario 3', 310, 00)
+ @ ./src/app/app.module.ts 12:0-102
+ @ ./src/main.ts
+ @ multi webpack-dev-server/client?http://localhost:4200 ./src/main.ts
+webpack: Failed to compile.
+webpack: Compiling...
+Hash: cc90f6e287abb784324f
+Time: 207ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry]
+webpack: Compiled successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [versão 10.0.14393]
+(c) 2016 Microsoft Corporation. Todos os direitos reservados.
+
+C:\WINDOWS\system32>cd C:\dev\workspaces\neon\CE\ce-a4
+
+C:\dev\workspaces\neon\CE\ce-a4>ng serve
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200 **
+Hash: cc90f6e287abb784324f
+Time: 19015ms
+chunk    {0} polyfills.bundle.js, polyfills.bundle.js.map (polyfills) 158 kB {5} [initial] [rendered]
+chunk    {1} styles.bundle.js, styles.bundle.js.map (styles) 129 kB {5} [initial] [rendered]
+chunk    {2} main.bundle.js, main.bundle.js.map (main) 7.04 kB {4} [initial] [rendered]
+chunk    {3} scripts.bundle.js, scripts.bundle.js.map (scripts) 72.7 kB {5} [initial] [rendered]
+chunk    {4} vendor.bundle.js, vendor.bundle.js.map (vendor) 2.4 MB [initial] [rendered]
+chunk    {5} inline.bundle.js, inline.bundle.js.map (inline) 0 bytes [entry] [rendered]
+webpack: Compiled successfully.
+^CDeseja finalizar o arquivo em lotes (S/N)?
+^C
+C:\dev\workspaces\neon\CE\ce-a4>ng g service services/usuario
+installing service
+  create src\app\services\usuario.service.spec.ts
+  create src\app\services\usuario.service.ts
+  WARNING Service is generated but not provided, it must be provided to be used
+
+C:\dev\workspaces\neon\CE\ce-a4>ng g service services/observer-utils
+installing service
+  create src\app\services\observer-utils.service.spec.ts
+  create src\app\services\observer-utils.service.ts
+  WARNING Service is generated but not provided, it must be provided to be used
+
+C:\dev\workspaces\neon\CE\ce-a4>
