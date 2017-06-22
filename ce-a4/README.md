@@ -1,5 +1,8 @@
 # CeA4
 
+* Projeto desenvolido para migrar as funcionalidades do projeto ce-ui, que estava utilizando o AngularJS 1, para passar a utilizar o AngularJS 4.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.5.
 
 ## Development server
