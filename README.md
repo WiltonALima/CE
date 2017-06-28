@@ -1,7 +1,9 @@
 #Aplicação CE
+*A branch-impl é a mais atualizada.
 * Desenvolvimento de uma aplicação para simular os saques em caixas eletrônicos, cadastrando usuarios, caixas e saques, ao realizar o saque é debitado das contas e dos valores de notas dos caixas.
-* Foi desenvolvido uma Single Page Aplication de exemplo, utilizando AngularJS, Gulp, Bower Bootstrap, Spring, Resfull do Spring para desenvolver as APIs.Foi tambem utilizado JUnit com Mochito para realizar os testes unitários da funcionalidade de saque.
-* *A branch-impl é a mais atualiza.
+* Foi desenvolvida uma Single Page Aplication de exemplo (projeto ce-ui), utilizando AngularJS e Bootstrap. Para realização de builds e e gerenciamento de dependencias do projeto foram utilizados Gulp e Bower respectivamente. Para desenvolver a aplicação backend foram criados 2 projetos maven (ce-crud e ce-core) utilizando Spring , spring-datda, JPA, hibernate e Resfull do Spring para desenvolver as APIs. Foram tambem utilizados JUnit e Mochito para realizar os testes unitários da funcionalidade de saque.
+* Posteriormente foi desenvolvido um outro projeto para migrar a aplicação para o Angular 4 (projeto ce-a4)
+
 #Iniciando o projeto ce-crud e ce-core
 
 * Instalar o maven , java 8 e configuralos no eclispe, de preferencia o neon. *Importar os projetos ce-crud e ce-core no eclipse.
