@@ -1,4 +1,5 @@
 #Aplicação CE
+
 *A branch-impl é a mais atualizada.
 * Desenvolvimento de uma aplicação para simular os saques em caixas eletrônicos, cadastrando usuarios, caixas e saques, ao realizar o saque é debitado das contas e dos valores de notas dos caixas.
 * Foi desenvolvida uma Single Page Aplication de exemplo (projeto ce-ui), utilizando AngularJS e Bootstrap. Para realização de builds e e gerenciamento de dependencias do projeto foram utilizados Gulp e Bower respectivamente. Para desenvolver a aplicação backend foram criados 2 projetos maven (ce-crud e ce-core) utilizando Spring , spring-datda, JPA, hibernate e Resfull do Spring para desenvolver as APIs. Foram tambem utilizados JUnit e Mochito para realizar os testes unitários da funcionalidade de saque.
